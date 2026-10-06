@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'HE',
+    'CANTEEN',
+    'LIBRARY',
+    'BOOKSTORE',
+    "PRINCIPAL'S OFFICE",
+    "DEAN'S OFFICE",
+    "PRESIDENT'S OFFICE",
+    'AUDITORIUM',
+    'DRRM',
+    'GUIDANCE',
+    'MIS',
+    'IBED FACULTY',
+    'SCIENCE LAB',
+    'MGS',
+    'RESEARCH OFFICE',
+    'ALUMNI',
+    'NSTP',
+    'DISCIPLINE',
+    'SDA',
+    'SAC',
+    'WATERSATION',
+    'CHAPEL',
+    'SEWING',
+];

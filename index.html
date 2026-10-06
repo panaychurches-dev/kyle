@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocTrack | Document Tracking System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">D</div>
+          <span>DocTrack</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Track</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#downloadModal">Download</a>
+        </nav>
+      </header>
+
+      <div class="download-modal" id="downloadModal" aria-hidden="true">
+        <div class="download-modal-backdrop"></div>
+        <div class="download-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="downloadTitle">
+        </div>
+      </div>
+
+      <main class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Document Tracking System</p>
+          <h1>Track your document in seconds.</h1>
+          <p class="subtitle">
+            Monitor document movement, verify status, and find records instantly using
+            a reference number or QR code.
+          </p>
+        </div>
+
+        <section class="tracker-card" aria-label="Document tracking form">
+          <div class="option-toggle" role="radiogroup" aria-label="Tracking method">
+            <label class="option active">
+              <input type="radio" name="tracking-method" value="reference" checked />
+              <span>Reference No.</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="tracking-method" value="qr" />
+              <span>QR Code</span>
+            </label>
+          </div>
+
+          <div class="input-group">
+            <label for="tracking-input" class="sr-only">Enter tracking number</label>
+            <input
+              id="tracking-input"
+              type="text"
+              placeholder="Enter reference number"
+              aria-label="Enter tracking number"
+            />
+          </div>
+
+          <button type="button" class="track-button">Track Document</button>
+
+          <p class="helper-text">Need help? Use your assigned reference number or scan the QR code.</p>
+        </section>
+      </main>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
